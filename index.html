@@ -20,15 +20,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div class="name"> <img src="https://drive.google.com/thumbnail?id=1C9DsdvnR-GNyKEqmvJ7oT9Z4Zn5nBef2"
-      alt="blue square"> Eshenkulov <span class="job"> / STUDENT </span>    
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <script src="https://kit.fontawesome.com/e9a7f34b6f.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <div class="name"> <i class="fas fa-square-full"></i> Eshenkulov <span class="job"> / STUDENT </span>    
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
           </li>
@@ -44,11 +45,10 @@
         </ul>
       </div>
     </nav>
-    
 
     <div class="container">
         <div class="leftRec" style="background-color: rgb(230, 218, 206);"></div>
-        
+        <div class="small_leftRec" style="background-color: rgb(244, 236, 230);"></div>
         <div class="content">
             <h1>Hello</h1>
             <h2>Here's who I am & what I do</h2>
@@ -65,35 +65,42 @@
             </p>
         </div>
     </div>
-    <div class="small_leftRec" style="background-color: rgb(244, 236, 230);"></div>
 
-    <footer>© 2023 by Kutman Eshenkulov. <br>
-        Proudly created with HTML/CSS
-        <div class="contacts">
-            <ul class="contact_names">
-                <li>Call</li>
-                <li>Write</li>
-                <li>Follow</li>
-            </ul>
-            <div class="contact_data">
-                <p id="number">0500225119</p>
-                <p id="email">kutman.stel@gmail.com</p>
-                <span id="social_media">
-                    <a href="https://www.youtube.com/"><img
-                            src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/6ea5b4a88f0b4f91945b40499aa0af00.webp"
-                            alt="LinkedIn"></a>
-                    <a href="https://www.youtube.com/"><img
-                            src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.webp"
-                            alt="Facebook"></a>
-                    <a href="https://www.youtube.com/"><img
-                            src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_23,h_24,al_c,q_85,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.webp"
-                            alt="Twitter"></a>
-                    <a href="https://www.youtube.com/"><img
-                            src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_23,h_24,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp"
-                            alt="Instagram"></span></a>
-            </div>
+  <footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-5 mt-md-0 mt-3">
+          <p>© 2023 by Kutman Eshenkulov. <br>
+            Proudly created with HTML/CSS</p>
         </div>
-    </footer>
+        <div class="col-md-2 mb-md-0 mb-3 text-center">
+          <h5 class="text-uppercase">Call</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">0500225119</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-md-6 mb-6 text-center">
+          <h5 class="text-uppercase">Write</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">kutman.stel@gamil.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-md-0 mb-3 text-center">
+          <h5 class="text-uppercase">Follow</h5>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-pinterest"></i>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
