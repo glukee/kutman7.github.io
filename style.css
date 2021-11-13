@@ -12,6 +12,11 @@ nav{
     height: 130px;
 }
 
+.name>img {
+    height: 20px;
+    margin: 0 2% 0 0;
+}
+
 .name {
     width: 330px;
     font-size: 30px;
@@ -35,15 +40,14 @@ nav{
     border: none;
 }
 
-.name>img {
-    height: 20px;
-    margin: 0 2% 0 0;
-}
-
 .job {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     margin: 0 0 0 1%;
+}
+
+.container{
+    height: 1000px;
 }
 
 .leftRec {
@@ -55,6 +59,9 @@ nav{
 }
 
 .small_leftRec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     width: 375px;
     height: 550px;
@@ -63,36 +70,47 @@ nav{
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 900px) {
-    .leftRec {
-        top: 500px;
-        width: 100vw;
-        height: 1000px;
-        left: 0;
-        right: 0;
-    }
-    .small_leftRec {
-        position: absolute;
-        top: 200px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-    }
-    .content {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 1000px auto 0 auto;
-    }
-    .container{
-        height: 150px;
-    }
-  }
+.small_leftRec > img:first-of-type {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    margin: 50px 0 0 0;
+}
+
+.small_leftRec > img {
+    height: 1.5px;
+    width: 55px;
+    margin: 30px 0 0 0;
+}
+
+.small_leftRec > h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.small_leftRec > h2 {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 30px 0 0 0;
+}
+
+.rec_list > li{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0 0 0;
+}
+
+.rec_contact{
+    background-color: white;
+    width: 100%;
+    margin: 40px 0 0 0;
+}
 
 .content {
     display: flex;
     position: relative;
-    top: -200px;
+    top: -350px;
     right: -500px;
     width: 335px;
     height: 400px;
@@ -113,6 +131,10 @@ nav{
     margin: 0 0 50px 0;
 }
 
+.content > p {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .content_button > button {
     cursor: pointer;
     border-radius: 30px;
@@ -124,19 +146,73 @@ nav{
     color: black
 }
 
-.content > p {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.row{
-    margin:400px 0 0 0;
-}
-
 .content_button > button:hover {
     background: #0050FF;
     color: #fff;
 }
 
-.fab{
-    margin: 0 10px 0 10px;
+.content_button_rec > button {
+    display: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 100px;
+    background: transparent;
+    color: black
 }
+
+.content_button_rec > button:hover {
+    background: #0050FF;
+    color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        height: 150px;
+    }
+
+    .leftRec {
+        top: 500px;
+        width: 100vw;
+        height: 1000px;
+        left: 0;
+        right: 0;
+    }
+    .small_leftRec {
+        position: absolute;
+        top: 200px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .small_leftRec > h2 {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 1000px auto 0 auto;
+    }
+
+    .content_button > button {
+        display: none;
+    }
+
+    .content_button_rec > button {
+        display: inline;
+    }
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 1350px auto 0 auto;
+    }
+  }
+  .col-md-5{
+      padding: 0 0 0 50px !important;
+  }
