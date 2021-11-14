@@ -24,11 +24,17 @@ nav{
     float:right;
 }
 
+.job {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 0 0 1%;
+}
+
 @media only screen and (max-width: 600px) {
     .name {
         right: 350px;
     }
-  }
+}
 
 .navbar-nav{
     display: inline;
@@ -38,12 +44,6 @@ nav{
 .navbar-toggler {
     padding: 0 !important;
     border: none !important;
-}
-
-.job {
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0 0 0 1%;
 }
 
 .container{
@@ -75,16 +75,16 @@ nav{
     margin: 50px 0 0 0;
 }
 
-.minus.icon {
-    border: 1px solid black;
-    width: 60px;
-    margin-top: 20px;
-}
-
 .small_leftRec > h1 {
     text-align: center;
     margin: 20px 0 0 0;
     font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.minus.icon {
+    border: 1px solid black;
+    width: 60px;
+    margin-top: 20px;
 }
 
 .small_leftRec > h2 {
@@ -151,6 +151,7 @@ nav{
 .content_button > button > a:hover {
     background: #0050FF;
     color: #fff;
+    text-decoration: none;
 }
 
 #but12 {
@@ -204,11 +205,26 @@ nav{
         right: 0;
         margin: 1150px auto 0 auto;
     }
-    .col-md-5{
-        margin: 0 0 0 0 !important;
+    .col-md-5 > p:nth-child(1){
+        margin: 0 0 30px 0 !important;
     }
 
-  }
-  .col-md-5{
+}
+
+  .col-md-5 > p:nth-child(1) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: small;
     margin-left: 40px;
+  }
+
+  .col-md-2 > ul > li {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .col-md-2 > h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: medium;
   }
