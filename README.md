@@ -7,7 +7,7 @@
 
 ![performance test mobile](https://user-images.githubusercontent.com/73386100/141679458-58787be5-6d3e-43e5-a437-b207234e3913.png)
 
-## [Link To WebSite](https://condescending-wright-ef4d34.netlify.app/)
+## [Link To WebSite](https://kutman7.github.io/)
 
 * [x] call for action buttons
 * [x] at least 4 sections
@@ -16,5 +16,8 @@
 * [x] css, js and img folders
 * [x] readable fonts
 * [x] header and footer with copyrights and contact information
-* [x] working with files
-* [x] UML diagram
+* [x] link to web-site
+* [x] screenshots
+* [x] responsive
+* [x] Performance test passed
+* [x] Clean and Valid code
