@@ -5,7 +5,7 @@
 
 ![performance test desktop](https://user-images.githubusercontent.com/73386100/141679455-4e2bb064-1303-44b4-a214-79970f1fc239.png)
 
-![performance test mobile](https://user-images.githubusercontent.com/73386100/141679458-58787be5-6d3e-43e5-a437-b207234e3913.png)
+![performance test mobile](https://user-images.githubusercontent.com/73386100/141691651-8aeffaf4-10d4-4d7e-90a2-b732d2d8d4ca.png)
 
 ## [Link To WebSite](https://kutman7.github.io/)
 
