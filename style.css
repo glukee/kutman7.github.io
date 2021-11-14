@@ -35,9 +35,13 @@ nav{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-toggler{
-    padding: 0;
-    border: none;
+.navbar-toggler {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.collapse {
+    height: 100vh !important;
 }
 
 .job {
@@ -202,5 +206,5 @@ nav{
     }
   }
   .col-md-5{
-      padding: 0 0 0 50px !important;
+      padding: 0 !important;
   }
