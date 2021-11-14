@@ -66,6 +66,8 @@ nav{
 
 .small_leftRec > img:first-of-type {
     border-radius: 50%;
+    width: 220px;
+    height: 220px;
     margin: 50px 0 0 0;
 }
 
