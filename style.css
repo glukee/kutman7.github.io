@@ -151,21 +151,8 @@ nav{
     color: #fff;
 }
 
-.content_button_rec > button {
+#but12 {
     display: none;
-    cursor: pointer;
-    border-radius: 30px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    border: 1px solid black;
-    border-radius: 100px;
-    background: transparent;
-    color: black
-}
-
-.content_button_rec > button:hover {
-    background: #0050FF;
-    color: #fff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -199,13 +186,14 @@ nav{
         margin: 1000px auto 0 auto;
     }
 
-    .content_button > button {
+    .content .content_button > button {
         display: none;
     }
 
-    .content_button_rec > button {
-        display: inline;
+    #but12 {
+        display: inline !important;
     }
+
     footer {
         position: absolute;
         left: 0;
