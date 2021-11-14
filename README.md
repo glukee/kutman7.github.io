@@ -1,18 +1,20 @@
 # Personal-Site
  Mid-Term project
 
-![mobile-frendly](https://user-images.githubusercontent.com/73386100/141678604-b9e3b651-7b29-4ce0-ae5d-09c6c7b927c6.png)
+![mobile-frendly](https://user-images.githubusercontent.com/73386100/141679452-ef1cfddf-e873-4f23-b16f-69ee8d5dfa06.png)
 
-![performance test](https://user-images.githubusercontent.com/73386100/141678605-9ae29785-dcca-4842-82fe-50e33f4b3e5f.png)
+![performance test desktop](https://user-images.githubusercontent.com/73386100/141679455-4e2bb064-1303-44b4-a214-79970f1fc239.png)
+
+![performance test mobile](https://user-images.githubusercontent.com/73386100/141679458-58787be5-6d3e-43e5-a437-b207234e3913.png)
 
 ## [Link To WebSite](https://condescending-wright-ef4d34.netlify.app/)
 
-* [x] readme.md
-* [x] description
-* [x] screenshots
-* [x] Figma
-* [x] .jar File
-* [x] .exe File
-* [x] inheritance, polymorphism
+* [x] call for action buttons
+* [x] at least 4 sections
+* [x] at least 5 images
+* [x] 1 page only (index.html)
+* [x] css, js and img folders
+* [x] readable fonts
+* [x] header and footer with copyrights and contact information
 * [x] working with files
 * [x] UML diagram
