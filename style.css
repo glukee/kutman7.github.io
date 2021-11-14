@@ -12,11 +12,6 @@ nav{
     height: 130px;
 }
 
-.name>img {
-    height: 20px;
-    margin: 0 2% 0 0;
-}
-
 .name {
     width: 330px;
     font-size: 30px;
@@ -27,12 +22,11 @@ nav{
 .job {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    margin: 0 0 0 1%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 392px) {
     .name {
-        right: 350px;
+        width: 240px;
     }
 }
 
