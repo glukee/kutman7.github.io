@@ -89,6 +89,15 @@ nav{
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .name{
+        margin-left: 10px;
+    }
+    .bar{
+        margin-right: 20px;
+    }
+}
+
 @media only screen and (min-width: 721px) {
     #collapsed_nav{ 
         background-color: #0050FF;
