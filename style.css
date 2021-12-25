@@ -9,7 +9,7 @@ body {
 }
 
 nav{
-    display: flex !important;
+    display: absolute !important;
     justify-content: space-between;
     align-items: center;
     height: 110px;
@@ -17,9 +17,12 @@ nav{
     position: fixed;
     background-color: whitesmoke;
     z-index: 2;
+    top: 0;
+    padding-top: 30px;
 }
 
 .list_container{
+    display: inline;
     width: 400px;
     height: 20px;
 }
@@ -29,8 +32,11 @@ nav{
 }
 
 .unorder{
+    float: right;
     display: flex;
     justify-content: space-evenly;
+    width: 400px;
+    margin-top: 13px;
 }
 
 .name {
@@ -38,6 +44,8 @@ nav{
     font-size: 30px;
     font-family: poppins-semibold, poppins, sans-serif;
     margin-left: 50px;
+    margin-bottom: 50px;
+    display: inline;
 }
 
 .job {
@@ -51,7 +59,8 @@ nav{
 }
 
 #collapsed_nav{
-    background-color: red;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     z-index: 3;
@@ -66,14 +75,17 @@ nav{
     align-items: center;
     width: 500px;
     height: 500px;
+    font-family: poppins-semibold, poppins, sans-serif;
+    font-size: 40px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
     .list_container{
         display: none;
     }
     .bar{
         display: inline;
+        float: right;
     }
 }
 
@@ -84,6 +96,9 @@ nav{
     }
     #container_id{
         display: block !important;
+    }
+    #footer{
+        display:block;
     }
 }
 
