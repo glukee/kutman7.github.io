@@ -8,45 +8,59 @@
     <title>Personal Page</title>
 
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Poppins:wght@700&family=Quicksand:wght@300;600&display=swap" rel="stylesheet"> 
-    
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
+
+<div id="collapsed_nav">
+  <ul class="coll list-unstyled">
+    <li>
+      <a class="d-block" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ABOUT ME</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">RESUME</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PROJECTS</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">CONTACT</a>
+    </li>
+  </ul>
+</div>
 
 <body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e9a7f34b6f.js" crossorigin="anonymous"></script>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-      <div class="name"> <i class="fas fa-square-full"></i> Eshenkulov <span class="job"> / STUDENT </span>    
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ABOUT ME<span class="sr-only">(current)</span></a>
+    <nav>
+      <div class="name"> <i class="fas fa-square-full" style="color:blue;"></i> Eshenkulov <span class="job"> / STUDENT </span></div>
+      <button class="bar" onclick="openMenu()"><i class="fas fa-bars fa-2x"></i></button>
+      <div class="list_container">
+        <ul class="unorder list-unstyled">
+          <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ABOUT ME</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">RESUME<span class="sr-only"></span></a>
+          <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">RESUME</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PROJECTS<span class="sr-only"></span></a>
+          <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PROJECTS</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">CONTACT<span class="sr-only"></span></a>
+          <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="container_id">
         <div class="leftRec" style="background-color: rgb(230, 218, 206);"></div>
         <div class="small_leftRec" style="background-color: rgb(244, 236, 230);">
           <img src="https://drive.google.com/thumbnail?id=1n0JzkYsIJNvB_dUuAzxAJ9sCRBGl--NU" alt="my photo">
@@ -58,7 +72,7 @@
           </div>
           <h2>STUDENT</h2>
           <div class = "rec_contact">
-            <ul class="rec_list list-unstyled mt-2">
+            <ul class="rec_list mt-2">
               <li class = "d-flex justify-content-around">
                 <a href="https://www.instagram.com/_.kutman/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank"><i class="fab fa-pinterest"></i></a>
@@ -84,7 +98,7 @@
         </div>
     </div>
 
-  <footer class="page-footer font-small blue pt-4">
+  <footer class="page-footer font-small blue pt-4" id="footer">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-md-5 col-sm-5">
