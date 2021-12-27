@@ -45,7 +45,7 @@ nav{
     font-family: poppins-semibold, poppins, sans-serif;
     margin-left: 50px;
     margin-bottom: 50px;
-    display: inline;
+    display: inline-block;
 }
 
 .job {
@@ -98,7 +98,19 @@ nav{
     }
 }
 
-@media only screen and (min-width: 721px) {
+@media only screen and (max-width: 405px) {
+    .name{
+        width: 220px;
+    }
+    nav{
+        padding-top: 12px;
+    }
+    .bar{
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
     #collapsed_nav{ 
         background-color: #0050FF;
         display: none !important;
