@@ -125,9 +125,39 @@ nav {
 }
 
 .rect {
-    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: c;
+    height: 4000px;
     width: 100vw;
     background-color: rgb(230, 218, 206);
+}
+
+.resume {
+    top: 2000px;
+    margin-top: 110px;
+    padding-top: 100px;
+    font-size: 40px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.title {
+    width: 700px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.experience {
+    font-size: 25px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.rect1 {
+    width: 730px;
+    height: 360px;
+    background-color: white;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 992px) {

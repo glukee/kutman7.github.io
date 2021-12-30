@@ -126,10 +126,10 @@ nav {
 
 .rect {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     align-content: c;
-    height: 1000px;
+    height: 4000px;
     width: 100vw;
     background-color: rgb(230, 218, 206);
 }
@@ -142,7 +142,49 @@ nav {
     font-family: poppins-semibold, poppins, sans-serif;
 }
 
-.rect1 {}
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 730px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.experience {
+    font-size: 25px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.download {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    background: #0050FF;
+    height: 40px;
+    width: 170px;
+    color: white;
+    border: none;
+}
+
+.rect1 {
+    width: 730px;
+    height: 360px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.education {
+    float: left;
+    font-size: 25px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.skillset {
+    width: 730px;
+    height: 560px;
+    background-color: white;
+}
 
 @media only screen and (max-width: 992px) {
     footer {
