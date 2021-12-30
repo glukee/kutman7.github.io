@@ -8,7 +8,7 @@ body {
     min-width: 320px;
 }
 
-nav{
+nav {
     display: absolute !important;
     justify-content: space-between;
     align-items: center;
@@ -21,17 +21,17 @@ nav{
     padding-top: 30px;
 }
 
-.list_container{
+.list_container {
     display: inline;
     width: 400px;
     height: 20px;
 }
 
-.list_container > ul > li{
+.list_container>ul>li {
     display: inline;
 }
 
-.unorder{
+.unorder {
     float: right;
     display: flex;
     justify-content: space-evenly;
@@ -53,12 +53,12 @@ nav{
     font-family: 'Quicksand', sans-serif;
 }
 
-.bar{
+.bar {
     display: none;
     margin-right: 50px;
 }
 
-#collapsed_nav{
+#collapsed_nav {
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -69,7 +69,7 @@ nav{
 }
 
 
-#collapsed_nav > ul{
+#collapsed_nav>ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,49 +80,55 @@ nav{
 }
 
 @media only screen and (max-width: 800px) {
-    .list_container{
+    .list_container {
         display: none;
     }
-    .bar{
+
+    .bar {
         display: inline;
         float: right;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .name{
+    .name {
         margin-left: 10px;
     }
-    .bar{
+
+    .bar {
         margin-right: 20px;
     }
 }
 
 @media only screen and (max-width: 405px) {
-    .name{
+    .name {
         width: 220px;
     }
-    nav{
+
+    nav {
         padding-top: 12px;
     }
-    .bar{
+
+    .bar {
         margin-top: 25px;
     }
 }
 
 @media only screen and (min-width: 800px) {
-    #collapsed_nav{ 
+    #collapsed_nav {
         display: none !important;
     }
-    #container_id{
+
+    #container_id {
         display: block !important;
     }
-    #footer{
-        display:block;
+
+    #footer {
+        display: block;
     }
 }
 
-.container{
+.container {
     height: 1000px;
 }
 
@@ -147,14 +153,14 @@ nav{
     z-index: 1;
 }
 
-.small_leftRec > img:first-of-type {
+.small_leftRec>img:first-of-type {
     border-radius: 50%;
     width: 220px;
     height: 220px;
     margin: 50px 0 0 0;
 }
 
-.small_leftRec > h1 {
+.small_leftRec>h1 {
     text-align: center;
     margin: 20px 0 0 0;
     font-family: poppins-semibold, poppins, sans-serif;
@@ -166,13 +172,13 @@ nav{
     margin-top: 20px;
 }
 
-.small_leftRec > h2 {
+.small_leftRec>h2 {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     margin: 30px 0 0 0;
 }
 
-.rec_contact{  
+.rec_contact {
     background-color: white;
     width: 100%;
     height: 50px;
@@ -190,23 +196,23 @@ nav{
     flex-direction: column;
 }
 
-.content > h1 {
+.content>h1 {
     font-family: poppins-semibold, poppins, sans-serif;
     font-size: 100px;
     margin: 0 0 0 0;
 }
 
-.content > h2 {
+.content>h2 {
     font-family: poppins-semibold, poppins, sans-serif;
     font-size: 25px;
     margin: 0 0 50px 0;
 }
 
-.content > p {
+.content>p {
     font-family: 'Quicksand', sans-serif;
 }
 
-.content_button > button {
+.content_button>button {
     cursor: pointer;
     border-radius: 30px;
     font-family: 'Quicksand', sans-serif;
@@ -217,12 +223,12 @@ nav{
     color: black
 }
 
-.content_button > button:hover {
+.content_button>button:hover {
     background: #0050FF;
     color: #fff;
 }
 
-.content_button > button > a:hover {
+.content_button>button>a:hover {
     background: #0050FF;
     color: #fff;
     text-decoration: none;
@@ -233,7 +239,7 @@ nav{
 }
 
 @media only screen and (max-width: 992px) {
-    .container{
+    .container {
         height: 150px;
     }
 
@@ -244,6 +250,7 @@ nav{
         left: 0;
         right: 0;
     }
+
     .small_leftRec {
         position: absolute;
         top: 200px;
@@ -252,7 +259,7 @@ nav{
         right: 0;
     }
 
-    .small_leftRec > h2 {
+    .small_leftRec>h2 {
         display: none;
     }
 
@@ -265,7 +272,7 @@ nav{
         margin: 1000px auto 0 auto;
     }
 
-    .content .content_button > button {
+    .content .content_button>button {
         display: none;
     }
 
@@ -279,25 +286,26 @@ nav{
         right: 0;
         margin: 1150px auto 0 auto;
     }
-    .col-md-5 > p:nth-child(1){
+
+    .col-md-5>p:nth-child(1) {
         margin: 0 0 30px 0 !important;
     }
 }
 
-  .col-md-5 > p:nth-child(1) {
+.col-md-5>p:nth-child(1) {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: small;
     margin-left: 40px;
-  }
+}
 
-  .col-md-2 > ul > li {
+.col-md-2>ul>li {
     display: flex;
     justify-content: space-around;
-  }
+}
 
-  .col-md-2 > h5{
+.col-md-2>h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: medium;
-  }
+}
