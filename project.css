@@ -112,11 +112,7 @@ nav{
 
 @media only screen and (min-width: 800px) {
     #collapsed_nav{ 
-        background-color: #0050FF;
         display: none !important;
-    }
-    #container_id{
-        display: block !important;
     }
     #footer{
         display:block;
@@ -125,94 +121,15 @@ nav{
 
 .container{
     height: 1000px;
-}
-
-.leftRec {
-    position: absolute;
-    width: 610px;
-    height: 1000px;
-    float: left;
-    left: 0;
-}
-
-.small_leftRec {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    width: 375px;
-    height: 550px;
-    top: 300px;
-    margin: 0 0 0 100px;
-    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.small_leftRec > img:first-of-type {
-    border-radius: 50%;
-    width: 220px;
-    height: 220px;
-    margin: 50px 0 0 0;
-}
-
-.small_leftRec > h1 {
-    text-align: center;
-    margin: 20px 0 0 0;
-    font-family: poppins-semibold, poppins, sans-serif;
-}
-
-.minus.icon {
-    border: 1px solid black;
-    width: 60px;
-    margin-top: 20px;
-}
-
-.small_leftRec > h2 {
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    margin: 30px 0 0 0;
-}
-
-.rec_contact{  
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    margin: 40px 0 0 0;
-}
-
-.content {
-    position: relative;
-    top: -230px;
-    right: -500px;
-    width: 360px;
-    height: 900;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    background-color: rgb(230, 218, 206);
 }
 
 @media only screen and (max-width: 992px) {
-    .container{
-        height: 150px;
-    }
-
-    .small_leftRec {
-        position: absolute;
-        top: 200px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-    }
-
-    .small_leftRec > h2 {
-        display: none;
-    }
-
     footer {
         position: absolute;
         left: 0;
         right: 0;
-        margin: 1150px auto 0 auto;
+        margin: 0 auto 0 auto;
     }
     .col-md-5 > p:nth-child(1){
         margin: 0 0 30px 0 !important;
