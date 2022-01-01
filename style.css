@@ -197,6 +197,7 @@ nav {
 }
 
 .content>h1 {
+    display: inline-block;
     font-family: poppins-semibold, poppins, sans-serif;
     font-size: 100px;
     margin: 0 0 0 0;
@@ -232,6 +233,30 @@ nav {
     background: #0050FF;
     color: #fff;
     text-decoration: none;
+}
+
+.animation_class {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 80px;
+    background-color: rgb(230, 218, 206);
+    top: 20px;
+    animation-name: red-rectangle;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes red-rectangle {
+    50% {
+		width: 260px;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 260px;
+	}
 }
 
 #but12 {
