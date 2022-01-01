@@ -21,7 +21,7 @@
 
 </head>
 
-<div id="collapsed_nav" style="background-color: rgb(244, 236, 230);">
+<div id="collapsed-nav" style="background-color: rgb(244, 236, 230);">
   <ul class="coll list-unstyled d-flex flex-column justify-content-center align-items-center">
     <li>
       <a href="./index.html">ABOUT ME</a>
@@ -39,6 +39,7 @@
 </div>
 
 <body>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -46,12 +47,16 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e9a7f34b6f.js" crossorigin="anonymous"></script>
+
   <nav id="nav">
+
     <div class="name"> <i class="fas fa-square-full" style="color:blue;"></i> Eshenkulov <span class="job"> / STUDENT
       </span></div>
-    <button class="bar" onclick="openMenu()"><i class="fas fa-bars fa-2x"></i></button>
-    <div class="list_container">
-      <ul class="unorder list-unstyled">
+
+    <button class="burger" onclick="openMenu()"><i class="fas fa-bars fa-2x"></i></button>
+
+    <div class="list-container">
+      <ul class="list-unstyled">
         <li>
           <a href="./index.html">ABOUT ME</a>
         </li>
@@ -66,20 +71,31 @@
         </li>
       </ul>
     </div>
+
   </nav>
 
-  <div class="container" id="container_id">
-    <div class="leftRec" style="background-color: rgb(230, 218, 206);"></div>
-    <div class="small_leftRec" style="background-color: rgb(244, 236, 230);">
+  <div class="container" id="container-id">
+
+    <div class="background-rect" style="background-color: rgb(230, 218, 206);"></div>
+
+    <div class="content-rect" style="background-color: rgb(244, 236, 230);">
+
       <img src="https://drive.google.com/thumbnail?id=1n0JzkYsIJNvB_dUuAzxAJ9sCRBGl--NU" alt="my photo">
+
       <h1>Kutman <br> Eshenkulov</h1>
-      <div class="minus icon"></div>
-      <div class="content_button" id="but12">
-        <button style="padding: 5px 30px 5px 30px; margin: 30px 0 0 0"><a href="./resume.html">RESUME</a></button>
-        <button style="padding: 5px 22px 5px 22px;"><a href="./project.html">PROJECTS</a></button>
+
+      <div class="line"></div>
+
+      <div class="button-container" id="but12">
+        <button class="resume_button" style="padding: 5px 30px 5px 30px; margin: 30px 0 0 0"><a
+            href="./resume.html">RESUME</a></button>
+        <button class="project_button" style="padding: 5px 22px 5px 22px;"><a
+            href="./project.html">PROJECTS</a></button>
       </div>
+
       <h2>STUDENT</h2>
-      <div class="rec_contact">
+
+      <div class="contact">
         <ul class="rec_list mt-2">
           <li class="d-flex justify-content-around">
             <a href="https://www.instagram.com/_.kutman/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -89,50 +105,75 @@
           </li>
         </ul>
       </div>
+
     </div>
+
     <div class="content">
-      <h1><rectangle class="animation_class"></rectangle>Hello</h1>
+
+      <h1>
+        <rectangle class="slide"></rectangle>Hello
+      </h1>
+
       <h2>Here's who I am & what I do</h2>
-      <div class="content_button">
-        <button style="padding: 5px 30px 5px 30px; margin: 0 20px 50px 0"><a href="./resume.html">RESUME</a></button>
-        <button style="padding: 5px 22px 5px 22px;"><a href="./project.html">PROJECTS</a></button>
+
+      <div class="button-container">
+        <button class="resume_button" style="padding: 5px 30px 5px 30px; margin: 0 20px 50px 0"><a
+            href="./resume.html">RESUME</a></button>
+        <button class="project_button" style="padding: 5px 22px 5px 22px;"><a
+            href="./project.html">PROJECTS</a></button>
       </div>
 
-      <p>
+      <p class="description">
         My name is Kutman. I am student at Ala-Too University, Computer Science Department. My hobby is reading
         books, watching films and learging something new.<br>
         <br>
         I think that I'm an analytical, dependable, and responsible person.
       </p>
+
     </div>
+
   </div>
 
   <footer class="page-footer font-small blue pt-4" id="footer">
+
     <div class="container-fluid text-center">
+
       <div class="row">
+
         <div class="col-md-5 col-sm-5">
-          <p>© 2023 by Kutman Eshenkulov. <br>
-            Proudly created with HTML/CSS</p>
+          <p class="copyright">
+            © 2023 by Kutman Eshenkulov. <br>
+            Proudly created with HTML/CSS
+          </p>
         </div>
+
         <div class="col-md-2 col-sm-2 col-4 text-center">
-          <h5 class="text">Call</h5>
+
+          <h5>Call</h5>
+
           <ul class="list-unstyled">
             <li>
               <a href="tel:+996500225119"><i class="fas fa-phone"></i></a>
             </li>
           </ul>
+          
         </div>
+
         <div class="col-md-2 col-sm-2 col-4 text-center">
-          <h5 class="text">Write</h5>
+          <h5>Write</h5>
           <ul class="list-unstyled">
             <li>
               <a href="mailto:kutman.eshenkulov@alatoo.edu.kg"><i class="fas fa-envelope"></i></a>
             </li>
           </ul>
         </div>
+
         <div class="col-md-2 col-sm-2 col-4 text-center">
-          <h5 class="text">Follow</h5>
+
+          <h5>Follow</h5>
+
           <ul class="list-unstyled">
+
             <li>
               <a href="https://www.instagram.com/_.kutman/" target="_blank"><i class="fab fa-instagram"></i></a>
               <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank"><i
@@ -140,9 +181,13 @@
               <a href="https://www.facebook.com/kutman.eshenkulov.50/" target="_blank"><i
                   class="fab fa-facebook"></i></a>
             </li>
+
           </ul>
+
         </div>
+
       </div>
+
   </footer>
 
 </body>

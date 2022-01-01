@@ -21,24 +21,6 @@ nav {
     padding-top: 30px;
 }
 
-.list_container {
-    display: inline;
-    width: 400px;
-    height: 20px;
-}
-
-.list_container>ul>li {
-    display: inline;
-}
-
-.unorder {
-    float: right;
-    display: flex;
-    justify-content: space-evenly;
-    width: 400px;
-    margin-top: 13px;
-}
-
 .name {
     width: 330px;
     font-size: 30px;
@@ -53,12 +35,30 @@ nav {
     font-family: 'Quicksand', sans-serif;
 }
 
-.bar {
+.list-container {
+    display: inline;
+    width: 400px;
+    height: 20px;
+}
+
+.list-container>ul {
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    margin-top: 13px;
+}
+
+.list-container>ul>li {
+    display: inline;
+}
+
+.burger {
     display: none;
     margin-right: 50px;
 }
 
-#collapsed_nav {
+#collapsed-nav {
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -68,8 +68,7 @@ nav {
     display: none;
 }
 
-
-#collapsed_nav>ul {
+#collapsed-nav>ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,11 +79,11 @@ nav {
 }
 
 @media only screen and (max-width: 800px) {
-    .list_container {
+    .list-container {
         display: none;
     }
 
-    .bar {
+    .burger {
         display: inline;
         float: right;
     }
@@ -95,7 +94,7 @@ nav {
         margin-left: 10px;
     }
 
-    .bar {
+    .burger {
         margin-right: 20px;
     }
 }
@@ -109,17 +108,17 @@ nav {
         padding-top: 12px;
     }
 
-    .bar {
+    .burger {
         margin-top: 25px;
     }
 }
 
 @media only screen and (min-width: 800px) {
-    #collapsed_nav {
+    #collapsed-nav {
         display: none !important;
     }
 
-    #container_id {
+    #container-id {
         display: block !important;
     }
 
@@ -132,7 +131,7 @@ nav {
     height: 1000px;
 }
 
-.leftRec {
+.background-rect {
     position: absolute;
     width: 610px;
     height: 1000px;
@@ -140,7 +139,7 @@ nav {
     left: 0;
 }
 
-.small_leftRec {
+.content-rect {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -153,32 +152,32 @@ nav {
     z-index: 1;
 }
 
-.small_leftRec>img:first-of-type {
+.content-rect>img {
     border-radius: 50%;
     width: 220px;
     height: 220px;
     margin: 50px 0 0 0;
 }
 
-.small_leftRec>h1 {
+.content-rect>h1 {
     text-align: center;
     margin: 20px 0 0 0;
     font-family: poppins-semibold, poppins, sans-serif;
 }
 
-.minus.icon {
+.line {
     border: 1px solid black;
     width: 60px;
     margin-top: 20px;
 }
 
-.small_leftRec>h2 {
+.content-rect>h2 {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     margin: 30px 0 0 0;
 }
 
-.rec_contact {
+.contact {
     background-color: white;
     width: 100%;
     height: 50px;
@@ -209,11 +208,11 @@ nav {
     margin: 0 0 50px 0;
 }
 
-.content>p {
+.description {
     font-family: 'Quicksand', sans-serif;
 }
 
-.content_button>button {
+.button-container>button {
     cursor: pointer;
     border-radius: 30px;
     font-family: 'Quicksand', sans-serif;
@@ -224,31 +223,31 @@ nav {
     color: black
 }
 
-.content_button>button:hover {
+.button-container>button:hover {
     background: #0050FF;
     color: #fff;
 }
 
-.content_button>button>a:hover {
+.button-container>button>a:hover {
     background: #0050FF;
     color: #fff;
     text-decoration: none;
 }
 
-.animation_class {
+.slide {
     display: inline-block;
     position: absolute;
     width: 0;
     height: 80px;
     background-color: rgb(230, 218, 206);
     top: 20px;
-    animation-name: red-rectangle;
+    animation-name: horizontal-slide;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-delay: 1s;
 }
 
-@keyframes red-rectangle {
+@keyframes horizontal-slide {
     50% {
 		width: 260px;
 		left: 0;
@@ -268,7 +267,7 @@ nav {
         height: 150px;
     }
 
-    .leftRec {
+    .background-rect {
         top: 500px;
         width: 100vw;
         height: 800px;
@@ -276,7 +275,7 @@ nav {
         right: 0;
     }
 
-    .small_leftRec {
+    .content-rect {
         position: absolute;
         top: 200px;
         margin: 0 auto;
@@ -284,7 +283,7 @@ nav {
         right: 0;
     }
 
-    .small_leftRec>h2 {
+    .content-rect>h2 {
         display: none;
     }
 
@@ -297,7 +296,7 @@ nav {
         margin: 1000px auto 0 auto;
     }
 
-    .content .content_button>button {
+    .button-container {
         display: none;
     }
 
@@ -312,12 +311,12 @@ nav {
         margin: 1150px auto 0 auto;
     }
 
-    .col-md-5>p:nth-child(1) {
+    .copyright {
         margin: 0 0 30px 0 !important;
     }
 }
 
-.col-md-5>p:nth-child(1) {
+.copyright {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: small;
